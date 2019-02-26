@@ -1,10 +1,10 @@
 pipeline{
  
- agent any
+ agent {
+        label 'WIN'
+       }
  
- tools{
-        maven 'MYMAVEN'
-      }
+ 
 stages{
       stage('codecheckout'){
                      steps{
