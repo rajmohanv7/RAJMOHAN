@@ -6,11 +6,7 @@ pipeline{
  
  
 stages{
-      stage('codecheckout'){
-                     steps{
-                       git 'https://github.com/rajmohanv7/RAJMOHAN.git'
-                         }
-                           }
+      
       stage('build'){
                    steps{
                      sh 'mvn clean compile'
