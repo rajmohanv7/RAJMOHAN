@@ -1,0 +1,23 @@
+pipeline{
+ 
+ agent any
+ 
+ tools{
+        maven 'MYMAVEN'
+      }
+stages{
+      stage('codecheckout'){
+                     step{
+                       git ''
+                         }
+                           }
+      stage('build'){
+                   step{
+                     sh 'mvn clean compile'
+                     
+                       }
+                    }
+
+         }
+
+        }
