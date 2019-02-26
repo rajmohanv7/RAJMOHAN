@@ -8,7 +8,7 @@ pipeline{
 stages{
       stage('codecheckout'){
                      step{
-                       git ''
+                       git 'https://github.com/rajmohanv7/RAJMOHAN.git'
                          }
                            }
       stage('build'){
